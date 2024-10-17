@@ -29,7 +29,7 @@ val newsList = listOf(
     )
 )
 
-val bottomNavBarItem = listOf(
+val bottomNavBarItems = listOf(
     BottomNavigationItem(
         title = "Inicio",
         icon = Icons.Default.Home,
