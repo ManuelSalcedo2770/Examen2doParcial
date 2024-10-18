@@ -128,7 +128,7 @@ class MainActivity : ComponentActivity() {
                             ChangeThemeScreen(innerPadding = innerPadding)
                         }
                         composable(route = "payments") {
-                            PaymentsScreen(innerPadding = innerPadding, navController = navController)
+                            PaymentsScreen(navController = navController)
                         }
                         composable(
                             route = "subject_details/{subjectName}",
@@ -157,3 +157,4 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
+
