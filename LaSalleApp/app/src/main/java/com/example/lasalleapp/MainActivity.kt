@@ -21,7 +21,6 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
@@ -30,8 +29,8 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.example.lasalleapp.ui.screens.CalendarScreen
-import com.example.lasalleapp.ui.screens.ChangePasswordScreen
-import com.example.lasalleapp.ui.screens.ChangeThemeScreen
+import com.example.lasalleapp.ui.screens.CambiarContraseñaScreen
+import com.example.lasalleapp.ui.screens.CambiarTemaScreen
 import com.example.lasalleapp.ui.screens.GradesScreen
 import com.example.lasalleapp.ui.screens.HomeScreen
 import com.example.lasalleapp.ui.screens.NewsDetailScreen
@@ -117,15 +116,11 @@ class MainActivity : ComponentActivity() {
                         composable(route = Screens.Settings.route) {
                             SettingsScreen(innerPadding = innerPadding, navController = navController)
                         }
-                        composable(
-                            route = "change_password"
-                        ) {
-                            ChangePasswordScreen(innerPadding = innerPadding)
+                        composable(route = "change_password") {
+                            CambiarContraseñaScreen(subjectName = "Cambiar Contraseña", innerPadding = innerPadding, navController = navController)
                         }
-                        composable(
-                            route = "change_theme"
-                        ) {
-                            ChangeThemeScreen(innerPadding = innerPadding)
+                        composable(route = "change_theme") {
+                            CambiarTemaScreen(subjectName = "Cambiar Tema", innerPadding = innerPadding, navController = navController)
                         }
                         composable(route = "payments") {
                             PaymentsScreen(navController = navController)

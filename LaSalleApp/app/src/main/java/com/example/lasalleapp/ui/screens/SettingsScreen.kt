@@ -31,7 +31,7 @@ fun SettingsScreen(innerPadding: PaddingValues, navController: NavController) {
     LazyColumn(
         modifier = Modifier
             .fillMaxSize()
-            .padding(16.dp)
+            .padding(20.dp)
     ) {
         item { // Header azul oscuro
             Box(

@@ -33,7 +33,7 @@ fun GradesScreen(innerPadding: PaddingValues, navController: NavController) {
     LazyColumn(
         modifier = Modifier
             .fillMaxSize()
-            .padding(16.dp)
+            .padding(20.dp)
     ) {
         item { // Header azul oscuro
             Box(
@@ -65,10 +65,10 @@ fun GradesScreen(innerPadding: PaddingValues, navController: NavController) {
             Row(
                 modifier = Modifier
                     .padding(16.dp)
-                    .fillMaxWidth(), // Asegúrate de que el Row ocupe todo el ancho
-                horizontalArrangement = Arrangement.SpaceBetween // Coloca los elementos en los extremos
+                    .fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween
             ) {
-                Column { // Columna para la información del alumno
+                Column {
                     Text("José Manuel Salcedo Méndez", style = MaterialTheme.typography.bodyMedium)
                     Text("Carrera: Ingeniería en Sistemas", style = MaterialTheme.typography.bodyMedium)
                     Text("Semestre: 5", style = MaterialTheme.typography.bodyMedium)
@@ -92,11 +92,11 @@ fun GradesScreen(innerPadding: PaddingValues, navController: NavController) {
         // Lista de materias con su promedio
         val subjects = listOf(
             "Programación en Android" to 9.2,
-            "POO" to 8.7,
+            "POO" to 9.7,
             "Servidores" to 9.5,
             "Base de Datos" to 8.7,
-            "Redes de área local" to 8.7,
-            "Aplicaciones empresariales" to 8.7,
+            "Redes de área local" to 9.7,
+            "Aplicaciones empresariales" to 9.7,
 
             )
 
